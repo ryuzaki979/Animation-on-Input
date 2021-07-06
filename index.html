@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Let's Play</h1>
+    </header>
+
+    <main class="flex">
+        <aside id="form-container-id">
+            <h6>Create a Ball and have Fun! </h6>
+            <form id="myForm" action="#" method="post">
+    
+                <div class="circle-width">
+                    <label for="circle-width">Width</label>
+                    <input class="input" id="circle-width" type="number" placeholder="width(5~15)" min="5" max="15">
+                </div>
+                <div class="circle-amount">
+                    <label for="circle-amount">Enter Circle Amount</label>
+                    <input class="input" id="circle-amount" type="number" placeholder="Amount(10~1000)" min="10" max="1000"></input>
+                </div>
+                <div class="animation-time">
+                    <label for="animation-time">Enter Animation-Time</label>
+                    <input class="input" id="animation-time" type="number" placeholder="Animation Time" min="10"></input>
+                </div>
+                
+                <button  id="btn">Submit</button>
+              </form>
+        </aside>
+        <aside id="screen">
+            <h3>Playground</h3>
+            <div class="playground" id="playground">
+                
+            </div>
+        </aside>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
