@@ -22,7 +22,14 @@ function getValue (){
         widthValue = 15;
     }
     
-    let amountValue = parseInt(amount.value);
+    let amountValue;
+    //  = parseInt(amount.value);
+    if(amount.value>=10 && amount.value<=1000){
+        amountValue = amount.value;
+     }
+     else{
+         amountValue = 10;
+     }
     let timeValue = time.value;
     return animationObject = {
         widthValue,
